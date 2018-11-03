@@ -6,7 +6,8 @@ main ()
   int flag = 0;
   char option;
 
-  while(flag == 0){
+  while (flag == 0)
+    {
 
       float value;
       int dollar, cents;
@@ -97,14 +98,14 @@ main ()
 	    }
 
 	}
-      printf ("Do you want to continue ? Press Y to Continue, N to Exit. \n Enter Desired Option: ");
+      printf
+	("Do you want to continue ? Press Y to Continue, N to Exit. \n Enter Desired Option: ");
       scanf (" %c", &option);
       if (option == 'N' || option == 'n')
-	    {
-	        flag = 1;
-	    }
+	{
+	  flag = 1;
+	}
     }
 
   return 0;
 }
-
