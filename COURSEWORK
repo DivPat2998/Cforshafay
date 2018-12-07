@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <math.h>
+
+int main()
+{
+    int rolls;
+    int faces;
+    int DiceRoll;
+    printf("Please enter number of rolls:");
+    scanf("%d",&rolls);
+    printf("Please enter number of faces:");
+    scanf("%d",&faces);
+    if(1<rolls<500 && 1<faces<25){
+    for(int i=0; i<rolls; i++){
+        DiceRoll = (rand()%faces) + 1;
+        int array1 [DiceRoll - 1];
+        printf("%d \n", DiceRoll);
+    }    
+    
+    }
+    for(int i = 0; i<faces; i++){
+        array1 = (array1/rolls)*100;
+        
+    }
+    printf("Number of occurences %d \n:", array1);
+    else
+        printf("Please choose the right parameters");
+    }
+
+    return 0;
+}
