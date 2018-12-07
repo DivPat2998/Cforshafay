@@ -45,7 +45,7 @@ main ()
 
             array2[j] = (array1[j] / rolls) * 100;
 
-            printf ("Number of occurences %f \n:", array2[j]);
+            printf ("Number of occurences:%f \n", array2[j]);
 
         }
     }
